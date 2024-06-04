@@ -1,0 +1,113 @@
+.frame-3 {
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 410.4px 96px 669.2px 96px;
+    width: 1125px;
+    box-sizing: border-box;
+}
+.frame-3 .group {
+    margin: 0 1.5px 293.9px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.frame-3 .log-into-your {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 78px;
+    color: #26282A;
+}
+.frame-3 .account {
+    margin-left: 0.7px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 78px;
+    color: #26282A;
+}
+.frame-3 .email {
+    opacity: 0.6;
+    margin: 0 9.5px 17.2px 9.5px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 50px;
+    color: #26282A;
+}
+.frame-3 .line-1 {
+    background: #26282A;
+    margin: 0 1px 130px 0;
+    width: 932px;
+    height: 2px;
+}
+.frame-3 .password {
+    opacity: 0.6;
+    margin: 0 10px 16.4px 10px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 50px;
+    color: #26282A;
+}
+.frame-3 .line-2 {
+    background: #26282A;
+    margin: 0 1px 187px 0;
+    width: 932px;
+    height: 2px;
+}
+.frame-3 .login {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 50px;
+    color: #FFFFFF;
+    margin-left: 180px;
+}
+.frame-3 .container {
+    border-radius: 58px;
+    background: #26282A;
+    position: relative;
+    margin: 0 9px 146.2px 0;
+    display: flex;
+    padding: 19.6px 0 20.4px 1.8px;
+    width: 468px;
+    box-sizing: border-box;
+}
+.frame-3 .dont-have-an-account {
+    opacity: 0.6;
+    margin: 0 2.4px 28.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 50px;
+    color: #26282A;
+}
+.frame-3 .sign-up {
+    margin-right: 8.1px;
+    overflow-wrap: break-word;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 45px;
+    color: #26282A;
+}
+
+/*#####################################################################################################################*/
+
+@media only screen and (max-width: 360px) {
+
+    .frame-3{
+        padding: 100px 96px 670px 96px;
+    }
+
+
+}
