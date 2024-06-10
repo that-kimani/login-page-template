@@ -1,14 +1,25 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #F2F2F2;
+}
+
 .frame-3 {
-    background: #F2F2F2;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 410.4px 96px 669.2px 96px;
-    width: 1125px;
+    padding:35px 0px 125px 0px;
+    width: 100%; 
     box-sizing: border-box;
 }
 .frame-3 .group {
-    margin: 0 1.5px 293.9px 0;
+    margin: 0 0px 60px 0 ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,94 +30,293 @@
     overflow-wrap: break-word;
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 78px;
+    font-size: 35px; 
     color: #26282A;
 }
 .frame-3 .account {
-    margin-left: 0.7px;
+    margin-left: 6.7px;
     overflow-wrap: break-word;
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 78px;
+    font-size: 30px ; 
     color: #26282A;
 }
+/*
 .frame-3 .email {
-    opacity: 0.6;
-    margin: 0 9.5px 17.2px 9.5px;
+    opacity: 0.4;
+    margin: 0 10px 10px 5px ;
     display: inline-block;
     align-self: flex-start;
     overflow-wrap: break-word;
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 50px;
-    color: #26282A;
-}
-.frame-3 .line-1 {
-    background: #26282A;
-    margin: 0 1px 130px 0;
-    width: 932px;
-    height: 2px;
-}
+    font-size: 16px ;
+    color: #040f1a;
+    border: none;
+    border-bottom: 1px solid ;
+    border-radius: 0px;
+    transition: border-color 1.5s ease;
+
 .frame-3 .password {
-    opacity: 0.6;
-    margin: 0 10px 16.4px 10px;
+    opacity: 0.4;
+    margin: 0 10px 10px 5px;
     display: inline-block;
     align-self: flex-start;
     overflow-wrap: break-word;
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 50px;
-    color: #26282A;
+    font-size: 16px;
+    color: #040f1a;
+}*/
+.form-group input {
+    background-color: #F2F2F2;
+    width: 300px;
+    margin-bottom: 40px;
+    padding:10px 5px;
+    border: none;
+    border-bottom:1px solid #bdbdbd;
+    border-radius: 0px;
+    outline: none;
+    transition: border-color 0.8s ease;
+
+  }
+  .form-group input:focus {
+    border-bottom: 1px solid #333;
+
+  }
+.frame-3 .email_container {
+    margin: 0 1px 50px 0;
+    width: 360px;
 }
-.frame-3 .line-2 {
-    background: #26282A;
-    margin: 0 1px 187px 0;
-    width: 932px;
-    height: 2px;
+.frame-3 .password_container {
+    margin: 0 1px 50px 0;
+    width: 360px;
+    padding: 10px 5px;
 }
+/*
 .frame-3 .login {
     overflow-wrap: break-word;
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 50px;
+    font-size: 25px;
     color: #FFFFFF;
-    margin-left: 180px;
+    margin:0 0 0 60px;
 }
-.frame-3 .container {
-    border-radius: 58px;
+.frame-3 .login_container {
     background: #26282A;
+    border-radius: 58px;
+    margin: 35px 0 90px 0;
+    padding: 8px 15px 15px 0;
+    width: 180px;
+    height:45px;
     position: relative;
-    margin: 0 9px 146.2px 0;
     display: flex;
-    padding: 19.6px 0 20.4px 1.8px;
-    width: 468px;
     box-sizing: border-box;
+}*/
+.login-button {
+    background-color: #333;/* Dark background color */
+    width: 125px;
+    margin-bottom:50px;
+    color: white;           /* White text color */
+    border: none;           /* Remove default border */
+    padding: 6px 20px;     /* Padding for size */
+    font-size: 16px;        /* Font size */
+    border-radius: 25px;    /* Rounded corners */
+    cursor: pointer;        /* Pointer cursor on hover */
+    outline: none;          /* Remove outline */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+
+}
+.login-button:hover {
+    background-color: #424242; /* Slightly lighter background on hover */
+
+}
+.toggle-password {
+    opacity: 0.8;
+    position: absolute;
+    margin-right: 535px;
+    margin-top: 4px;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor:pointer;
 }
 .frame-3 .dont-have-an-account {
     opacity: 0.6;
-    margin: 0 2.4px 28.5px 0;
+    margin: 0 0px 10px 7px;
     display: inline-block;
     overflow-wrap: break-word;
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 50px;
-    color: #26282A;
+    font-size: 20px;
+    color: #111e2c;
 }
 .frame-3 .sign-up {
-    margin-right: 8.1px;
+    margin: 0 5px 0 5px ;
     overflow-wrap: break-word;
     font-family: 'Noto Sans';
     font-weight: 400;
-    font-size: 45px;
+    font-size: 22px;
     color: #26282A;
+    text-decoration:underline ;
 }
 
 /*#####################################################################################################################*/
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 600px) {
 
     .frame-3{
-        padding: 100px 96px 670px 96px;
+        width:100%;
+        height: 100%;
+    }
+
+
+}
+
+@media only screen and (min-width: 601px) {
+
+    .frame-3{
+        width:100%;
+        height: 100%;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .frame-3{
+        width:100%;
+        height: 100%;
+        padding-top: 125px;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .frame-3{
+        width:100%;
+        height: 100%;
+        padding-top: 125px;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        background-color: #FFFFFF;
+    }
+    .wrapper{
+        height: 600px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .frame-3{
+        width:390px;
+        height: 530px;
+        padding-top: 140px;
+        margin-top: 78px;
+        border-radius: 30px;
+        background-color: #d9dedf;
+    }
+
+    .frame-3 .group {
+        margin: 0 1.5px 50px 0 ;
+    }
+
+    .frame-3 .log-into-your {
+        font-size: 23px; 
+    }
+
+    .frame-3 .account {
+        font-size: 23px ; 
+    }
+    /*
+
+    .frame-3 .email {
+        opacity: 0.4;
+        margin: 0 10px 6px 7px ;
+        font-size: 16px ;
+        width: 310px;
+        padding: 5px 5px;
+        border: none;
+        border-bottom: 1px solid #000000;
+        border-radius: 0px;
+        outline: none;
+        background-color: #d8e7e9;
+        transition: border-color 1.5s ease;
+    }
+
+    .frame-3 .email_container {
+        width: 325px;
+        margin-bottom: 40px;
+    }
+
+    .frame-3 .password {
+        opacity: 0.4;
+        margin: 0 10px 6px 7px;
+        font-size: 16px;
+        width: 310px;
+        padding: 5px 5px;
+        border: none;
+        border-bottom: 1px solid #000000;
+        border-radius: 0px;
+        outline: none;
+        background-color: #d8e7e9;
+        transition: border-color 1.5s ease;
+    }
+
+    .frame-3 .password_container {
+        width: 325px;
+        margin-bottom: 75px;
+    }
+    */
+
+    /*Shared snippet*/
+    .form-group input {
+        background-color: #d9dedf;
+        width: 300px;
+        margin-bottom: 35px;
+        padding:10px 5px;
+        border: none;
+        border-bottom:1px solid #bdbdbd;
+        border-radius: 0px;
+        outline: none;
+        transition: border-color 0.8s ease;
+    
+      }
+      .toggle-password {
+        opacity: 0.8;
+        position: absolute;
+        margin-right: 535px;
+        margin-top: 4px;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor:pointer;
+    }
+    .frame-3 .login-button {
+        margin-top: 20px;
+
+    }
+    .frame-3 .dont-have-an-account {
+        opacity: 0.6;
+        margin: 0 0px 10px 7px;
+        font-size: 12px;
+        color: #192a3b;
+    }
+    .frame-3 .sign-up {
+        margin-left: 10px ;
+        font-size: 13px;
+        color: #26282A;
     }
 
 
