@@ -41,49 +41,33 @@ html, body {
     font-size: 30px ; 
     color: #26282A;
 }
-/*
-.frame-3 .email {
-    opacity: 0.4;
-    margin: 0 10px 10px 5px ;
-    display: inline-block;
-    align-self: flex-start;
-    overflow-wrap: break-word;
+.alert-message {
+    margin:5px ;
     font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px ;
-    color: #040f1a;
-    border: none;
-    border-bottom: 1px solid ;
-    border-radius: 0px;
-    transition: border-color 1.5s ease;
-
-.frame-3 .password {
-    opacity: 0.4;
-    margin: 0 10px 10px 5px;
-    display: inline-block;
-    align-self: flex-start;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    color: #040f1a;
-}*/
+    font-size: 12px;
+    margin-left: 27px;
+    margin-bottom: 12px;
+    color: crimson;
+    
+}
 .form-group input {
     background-color: #F2F2F2;
     width: 300px;
     margin-bottom: 40px;
+    margin-left: 25px;
     padding:10px 5px;
+    font-family: 'Inter';
     border: none;
     border-bottom:1px solid #bdbdbd;
     border-radius: 0px;
     outline: none;
     transition: border-color 0.8s ease;
 
-  }
+}
   .form-group input:focus {
     border-bottom: 1px solid #333;
 
-  }
+}
 .frame-3 .email_container {
     margin: 0 1px 50px 0;
     width: 360px;
@@ -93,30 +77,12 @@ html, body {
     width: 360px;
     padding: 10px 5px;
 }
-/*
-.frame-3 .login {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 25px;
-    color: #FFFFFF;
-    margin:0 0 0 60px;
-}
-.frame-3 .login_container {
-    background: #26282A;
-    border-radius: 58px;
-    margin: 35px 0 90px 0;
-    padding: 8px 15px 15px 0;
-    width: 180px;
-    height:45px;
-    position: relative;
-    display: flex;
-    box-sizing: border-box;
-}*/
 .login-button {
     background-color: #333;/* Dark background color */
     width: 125px;
     margin-bottom:50px;
+    margin-left: 112px;
+    font-family: 'Inter';
     color: white;           /* White text color */
     border: none;           /* Remove default border */
     padding: 6px 20px;     /* Padding for size */
@@ -131,15 +97,23 @@ html, body {
     background-color: #424242; /* Slightly lighter background on hover */
 
 }
+/*
 .toggle-password {
     opacity: 0.8;
-    position: absolute;
+    position: absolute; 
     margin-right: 535px;
     margin-top: 4px;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
     cursor:pointer;
+}
+*/
+.toggle-password {
+    opacity: 0.8;
+    position: relative;
+    right: 35px;
+    cursor: pointer;
 }
 .frame-3 .dont-have-an-account {
     opacity: 0.6;
@@ -154,13 +128,31 @@ html, body {
 .frame-3 .sign-up {
     margin: 0 5px 0 5px ;
     overflow-wrap: break-word;
-    font-family: 'Noto Sans';
+    font-family: 'Inter';
     font-weight: 400;
     font-size: 22px;
     color: #26282A;
     text-decoration:underline ;
 }
 
+.message {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.message-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.message-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
 /*#####################################################################################################################*/
 
 @media only screen and (max-width: 600px) {
@@ -168,6 +160,10 @@ html, body {
     .frame-3{
         width:100%;
         height: 100%;
+    }
+    .form-group{
+        position: relative;
+        width: 100%;
     }
 
 
@@ -223,7 +219,7 @@ html, body {
         width:390px;
         height: 530px;
         padding-top: 140px;
-        margin-top: 78px;
+        margin-top: 100px;
         border-radius: 30px;
         background-color: #d9dedf;
     }
@@ -239,46 +235,6 @@ html, body {
     .frame-3 .account {
         font-size: 23px ; 
     }
-    /*
-
-    .frame-3 .email {
-        opacity: 0.4;
-        margin: 0 10px 6px 7px ;
-        font-size: 16px ;
-        width: 310px;
-        padding: 5px 5px;
-        border: none;
-        border-bottom: 1px solid #000000;
-        border-radius: 0px;
-        outline: none;
-        background-color: #d8e7e9;
-        transition: border-color 1.5s ease;
-    }
-
-    .frame-3 .email_container {
-        width: 325px;
-        margin-bottom: 40px;
-    }
-
-    .frame-3 .password {
-        opacity: 0.4;
-        margin: 0 10px 6px 7px;
-        font-size: 16px;
-        width: 310px;
-        padding: 5px 5px;
-        border: none;
-        border-bottom: 1px solid #000000;
-        border-radius: 0px;
-        outline: none;
-        background-color: #d8e7e9;
-        transition: border-color 1.5s ease;
-    }
-
-    .frame-3 .password_container {
-        width: 325px;
-        margin-bottom: 75px;
-    }
-    */
 
     /*Shared snippet*/
     .form-group input {
@@ -295,16 +251,13 @@ html, body {
       }
       .toggle-password {
         opacity: 0.8;
-        position: absolute;
-        margin-right: 535px;
-        margin-top: 4px;
-        top: 50%;
-        right: 10px;
-        transform: translateY(-50%);
+        position: relative;
         cursor:pointer;
     }
     .frame-3 .login-button {
         margin-top: 20px;
+        margin-left: 112px;
+
 
     }
     .frame-3 .dont-have-an-account {

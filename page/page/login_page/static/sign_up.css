@@ -26,7 +26,7 @@ html, body {
     width: fit-content;
     box-sizing: border-box;
 }
-.frame-3 .log-into-your {
+.frame-3 .create-an {
     overflow-wrap: break-word;
     font-family: 'Inter';
     font-weight: 400;
@@ -50,11 +50,12 @@ html, body {
     color: crimson;
     
 }
+/*Shared snippet*/
 .form-group input {
     background-color: #F2F2F2;
     width: 300px;
     margin-bottom: 40px;
-    margin-left: 25px;
+    margin-left: 15px;
     padding:10px 5px;
     font-family: 'Inter';
     border: none;
@@ -77,9 +78,10 @@ html, body {
     width: 360px;
     padding: 10px 5px;
 }
-.login-button {
+.sign-up-button {
     background-color: #333;/* Dark background color */
     width: 125px;
+    margin-top: 15px;
     margin-bottom:50px;
     margin-left: 112px;
     font-family: 'Inter';
@@ -93,44 +95,32 @@ html, body {
     transition: background-color 0.3s; /* Smooth transition for background color */
 
 }
-.login-button:hover {
-    background-color: #424242; /* Slightly lighter background on hover */
+.sign-up-button:hover {
+    background-color: #464646; /* Slightly lighter background on hover */
 
 }
-/*
-.toggle-password {
-    opacity: 0.8;
-    position: absolute; 
-    margin-right: 535px;
-    margin-top: 4px;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    cursor:pointer;
-}
-*/
 .toggle-password {
     opacity: 0.8;
     position: relative;
     right: 35px;
     cursor: pointer;
 }
-.frame-3 .dont-have-an-account {
+.frame-3 .already-have-an-account {
     opacity: 0.6;
     margin: 0 0px 10px 7px;
     display: inline-block;
     overflow-wrap: break-word;
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 20px;
+    font-size: 17px;
     color: #111e2c;
 }
-.frame-3 .sign-up {
-    margin: 0 5px 0 5px ;
+.frame-3 .log-in {
+    margin: 5px 5px 0 5px ;
     overflow-wrap: break-word;
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 22px;
+    font-size: 19px;
     color: #26282A;
     text-decoration:underline ;
 }
@@ -228,7 +218,7 @@ html, body {
         margin: 0 1.5px 50px 0 ;
     }
 
-    .frame-3 .log-into-your {
+    .frame-3 .create-an {
         font-size: 23px; 
     }
 
@@ -240,7 +230,7 @@ html, body {
     .form-group input {
         background-color: #d9dedf;
         width: 300px;
-        margin-bottom: 35px;
+        margin-bottom: 25px;
         padding:10px 5px;
         border: none;
         border-bottom:1px solid #bdbdbd;
@@ -254,20 +244,22 @@ html, body {
         position: relative;
         cursor:pointer;
     }
-    .frame-3 .login-button {
-        margin-top: 20px;
+    .frame-3 .sign-up-button {
+        margin-top: 25px;
         margin-left: 112px;
 
 
+
     }
-    .frame-3 .dont-have-an-account {
+    .frame-3 .already-have-an-account {
         opacity: 0.6;
-        margin: 0 0px 10px 7px;
+        margin: 0 0px 5px 7px;
         font-size: 12px;
         color: #192a3b;
     }
-    .frame-3 .sign-up {
-        margin-left: 10px ;
+    .frame-3 .log-in {
+        margin-top: 15px;
+        margin-left: 10px;
         font-size: 13px;
         color: #26282A;
     }
