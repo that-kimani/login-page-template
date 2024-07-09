@@ -7,14 +7,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <link rel="stylesheet" href="{% static 'sign_up.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-
 
     <title>Signup</title>
 
@@ -24,10 +22,8 @@
     <div class="frame-3">
 
         <div class="group">
-
             <span class="create-an">Create an</span>
             <span class="account">account</span>
-
 
         </div>
 
@@ -36,13 +32,26 @@
 
             {% csrf_token %}
 
+            <div class="alert-message">
+                {% if messages %}
+                    <ul>
+                        {% for message in messages %}
+                         <p {% if message.tags %} class="{{ message.tags }}"{% endif %}> {{ message }} </p>
+
+                        {% endfor %}
+
+                    </ul>
+                {% endif %}
+                
+            </div>
+
             <div class="form-group">
-                <input type="text" name="username" class="email" placeholder="Username" required>
+                <input type="text" name="username" class="email" placeholder="Username" value="{{ username }}" required>
 
             </div>
 
             <div class="form-group">
-                <input type="email" name="email" class="email" placeholder="Email" required>
+                <input type="email" name="email" class="email" placeholder="Email" value="{{ email }}" required>
 
             </div>
 

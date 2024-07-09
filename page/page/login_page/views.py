@@ -13,7 +13,6 @@ def login_page(request):
 
     return HttpResponse(template.render( {} , request))    
 
-
 def user_authenticate(request):
         if request.method == 'POST' :
              email = request.POST.get('email')
@@ -27,15 +26,14 @@ def user_authenticate(request):
                   return redirect(reverse('dashboard') )
              
              else:
-                   messages.error(request , 'Incorrect email or password')
-                   return redirect(reverse('login_page'))
+                   if not User.objects.filter(email=email).exists():
+                    messages.error(request , 'The email address you entered is incorrect.')
 
+                   else:
+                    messages.error(request , 'The password you entered is incorrect.')
 
+                   return render (request , 'login_page.html' , {'email': email } )
 
-def dashboard(request):
-     template = loader.get_template('dashboard.html')
-
-     return HttpResponse(template.render({} , request))
 
 def signup(request):
       template = loader.get_template('signup.html')
@@ -52,16 +50,22 @@ def create_user(request):
 
           if User.objects.filter(email=email).exists():
                messages.error(request , 'Email already in use.')
+               return render(request, 'signup.html', {'username': username, 'email': email})
+          
+          if len(password) < 8 :
+               messages.error(request , 'Password must have at least 8 characters.')
+               return render(request, 'signup.html', {'username': username, 'email': email})
 
           else:
 
                user = User.objects.create_user(username = username , email = email , password = password)
                user.save()
+               messages.success(request, 'Account created successfully. Please login.')
 
                return redirect(reverse('login_page') )
 
-     
-     
 
-     
-     
+def dashboard(request):
+     template = loader.get_template('dashboard.html')
+
+     return HttpResponse(template.render({} , request))

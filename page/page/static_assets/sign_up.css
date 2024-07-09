@@ -18,6 +18,7 @@ html, body {
     width: 100%; 
     box-sizing: border-box;
 }
+
 .frame-3 .group {
     margin: 0 0px 60px 0 ;
     display: flex;
@@ -26,6 +27,7 @@ html, body {
     width: fit-content;
     box-sizing: border-box;
 }
+
 .frame-3 .create-an {
     overflow-wrap: break-word;
     font-family: 'Inter';
@@ -33,6 +35,7 @@ html, body {
     font-size: 35px; 
     color: #26282A;
 }
+
 .frame-3 .account {
     margin-left: 6.7px;
     overflow-wrap: break-word;
@@ -41,15 +44,16 @@ html, body {
     font-size: 30px ; 
     color: #26282A;
 }
+
 .alert-message {
     margin:5px ;
     font-family: 'Inter';
     font-size: 12px;
-    margin-left: 27px;
+    margin-left: 20px;
     margin-bottom: 12px;
     color: crimson;
-    
 }
+
 /*Shared snippet*/
 .form-group input {
     background-color: #F2F2F2;
@@ -63,48 +67,51 @@ html, body {
     border-radius: 0px;
     outline: none;
     transition: border-color 0.8s ease;
-
 }
+
   .form-group input:focus {
     border-bottom: 1px solid #333;
-
 }
+
 .frame-3 .email_container {
     margin: 0 1px 50px 0;
     width: 360px;
 }
+
 .frame-3 .password_container {
     margin: 0 1px 50px 0;
     width: 360px;
     padding: 10px 5px;
 }
+
 .sign-up-button {
-    background-color: #333;/* Dark background color */
+    background-color: #333;
     width: 125px;
     margin-top: 15px;
     margin-bottom:50px;
     margin-left: 112px;
     font-family: 'Inter';
-    color: white;           /* White text color */
-    border: none;           /* Remove default border */
-    padding: 6px 20px;     /* Padding for size */
-    font-size: 16px;        /* Font size */
-    border-radius: 25px;    /* Rounded corners */
-    cursor: pointer;        /* Pointer cursor on hover */
-    outline: none;          /* Remove outline */
+    color: white;           
+    border: none;           
+    padding: 6px 20px;     
+    font-size: 16px;        
+    border-radius: 25px;    
+    cursor: pointer;        
+    outline: none;          
     transition: background-color 0.3s; /* Smooth transition for background color */
-
 }
+
 .sign-up-button:hover {
     background-color: #464646; /* Slightly lighter background on hover */
-
 }
+
 .toggle-password {
     opacity: 0.8;
     position: relative;
     right: 35px;
     cursor: pointer;
 }
+
 .frame-3 .already-have-an-account {
     opacity: 0.6;
     margin: 0 0px 10px 7px;
@@ -115,6 +122,7 @@ html, body {
     font-size: 17px;
     color: #111e2c;
 }
+
 .frame-3 .log-in {
     margin: 5px 5px 0 5px ;
     overflow-wrap: break-word;
@@ -143,6 +151,10 @@ html, body {
     background-color: #f8d7da;
     border-color: #f5c6cb;
 }
+
+
+
+
 /*#####################################################################################################################*/
 
 @media only screen and (max-width: 600px) {
@@ -151,12 +163,11 @@ html, body {
         width:100%;
         height: 100%;
     }
+
     .form-group{
         position: relative;
         width: 100%;
     }
-
-
 }
 
 @media only screen and (min-width: 601px) {
@@ -165,7 +176,6 @@ html, body {
         width:100%;
         height: 100%;
     }
-
 
 }
 
@@ -177,7 +187,6 @@ html, body {
         padding-top: 125px;
     }
 
-
 }
 
 @media only screen and (min-width: 992px) {
@@ -188,9 +197,7 @@ html, body {
         padding-top: 125px;
     }
 
-
 }
-
 
 @media only screen and (min-width: 1200px) {
     html, body {
@@ -198,6 +205,7 @@ html, body {
         height: 100%;
         background-color: #FFFFFF;
     }
+
     .wrapper{
         height: 600px;
         width: 100%;
@@ -226,7 +234,6 @@ html, body {
         font-size: 23px ; 
     }
 
-    /*Shared snippet*/
     .form-group input {
         background-color: #d9dedf;
         width: 300px;
@@ -237,31 +244,30 @@ html, body {
         border-radius: 0px;
         outline: none;
         transition: border-color 0.8s ease;
-    
-      }
+    }
+
       .toggle-password {
         opacity: 0.8;
         position: relative;
         cursor:pointer;
     }
+
     .frame-3 .sign-up-button {
         margin-top: 25px;
         margin-left: 112px;
-
-
-
     }
+
     .frame-3 .already-have-an-account {
         opacity: 0.6;
         margin: 0 0px 5px 7px;
         font-size: 12px;
         color: #192a3b;
     }
+
     .frame-3 .log-in {
-        margin-left: 10px ;
+        margin-top: 15px;
+        margin-left: 10px;
         font-size: 13px;
         color: #26282A;
     }
-
-
 }

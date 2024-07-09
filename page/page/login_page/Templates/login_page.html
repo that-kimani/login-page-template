@@ -7,7 +7,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <link rel="stylesheet" href="{% static 'login_page.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -20,6 +19,8 @@
 
 </head>
 
+
+
 <body class="wrapper">
     <div class="frame-3">
 
@@ -28,13 +29,11 @@
             <span class="log-into-your">Log into your</span>
             <span class="account">account</span>
 
-
         </div>
 
 
         <form id="login-form" method="post" action="{% url 'user_authenticate' %}">
             {% csrf_token %}
-
 
             <div class="alert-message">
                 {% if messages %}
@@ -48,9 +47,8 @@
                 {% endif %}
             </div>
 
-
             <div class="form-group">
-                <input type="email" name="email" class="email" placeholder="Email" required>
+                <input type="email" name="email" class="email" placeholder="Email" value="{{ email }}" required>
 
             </div>
 
@@ -60,7 +58,6 @@
 
             </div>
 
-            <!-- Moved the login button inside the form -->
             <button type="submit" class="login-button">Login</button>
 
         </form>
@@ -86,6 +83,7 @@
                     alert('Please fill out both fields.');
                 }
             });
+
         </script>
 
         <div class="dont-have-an-account">Don’t have an account?</div>
@@ -93,6 +91,7 @@
         <a href='{% url 'signup' %}' class="sign-up">SignUp</a>
 
     </div>
+    
     
 </body>
 
